@@ -31,9 +31,7 @@ Date Conversion & Delivery Analysis
 Date columns in the orders DataFrame (order_purchase_timestamp, order_delivered_customer_date, order_estimated_delivery_date) have been converted to datetime objects.
 delivery_time and delivery_days are calculated for delivered orders.
 Delivery time is categorized into groups, but due to the high number of missing order_delivered_customer_date values, the current analysis shows an abnormally high percentage (98.2%) of orders falling into the >20 days category, indicating data quality issues impacting these metrics.
-Unresolved Issues & Next Steps
-Clarify Order_payements.csv: The fundamental issue of order_id mismatch and the content of Order_payements.csv must be resolved. It needs to be determined if it's a separate dataset, a linked dataset with a different key, or if Orders.csv contains all necessary payment information.
-Handle Missing Delivery Dates: A strategy is required to address the 60,126 delivered orders with missing order_delivered_customer_date to enable accurate delivery analysis.
+
 Generate Monthly Dashboard: Implementation is pending the resolution of the data mismatch, as payment data is crucial for monthly KPIs.
 Generate Exception Reports: Implementation is pending the resolution of data quality issues.
 How to Run
